@@ -35,7 +35,6 @@ pipeline {
                 }
                 post {
                     success {
-                        sh 'ls -l terraform/'  // List files to verify tfplan exists
                         archiveArtifacts artifacts: 'terraform/tfplan', allowEmptyArchive: true
                     }
                 }
