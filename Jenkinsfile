@@ -49,7 +49,7 @@ pipeline {
             steps {
                 input 'Proceed with Terraform apply?'
                 script {
-                    sh 'terraform/tfplan apply -input=false planfile'
+                    sh 'terraform/ apply -input=false planfile'
                 }
             }
         }
