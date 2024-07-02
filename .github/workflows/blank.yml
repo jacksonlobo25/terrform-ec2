@@ -27,7 +27,6 @@ jobs:
       uses: hashicorp/setup-terraform@v1
 
     - name: Terraform Init
-      working-directory: terraform
       run: terraform init -backend-config="tfstate.config"
 
     - name: Terraform Validate
